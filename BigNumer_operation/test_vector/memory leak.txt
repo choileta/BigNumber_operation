@@ -1,0 +1,36 @@
+==52451==
+==52451== HEAP SUMMARY:
+==52451==     in use at exit: 76 bytes in 4 blocks
+==52451==   total heap usage: 220 allocs, 216 frees, 29,061 bytes allocated
+==52451==
+==52451== 16 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==52451==    at 0x4C33D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==52451==    by 0x10BE21: bi_refine (in /home/topcue/b/a.out)
+==52451==    by 0x10D019: bi_ADD (in /home/topcue/b/a.out)
+==52451==    by 0x109640: addTest (in /home/topcue/b/a.out)
+==52451==    by 0x10E748: main (in /home/topcue/b/a.out)
+==52451==
+==52451== 28 (16 direct, 12 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 4
+==52451==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==52451==    by 0x10B5F6: bi_new (in /home/topcue/b/a.out)
+==52451==    by 0x108C24: basicOperationTest (in /home/topcue/b/a.out)
+==52451==    by 0x10E73E: main (in /home/topcue/b/a.out)
+==52451==
+==52451== 32 bytes in 1 blocks are definitely lost in loss record 4 of 4
+==52451==    at 0x4C33D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==52451==    by 0x10BE21: bi_refine (in /home/topcue/b/a.out)
+==52451==    by 0x10D019: bi_ADD (in /home/topcue/b/a.out)
+==52451==    by 0x10E3DB: bi_SQUC (in /home/topcue/b/a.out)
+==52451==    by 0x10E47D: bi_SQU (in /home/topcue/b/a.out)
+==52451==    by 0x10AF46: squTest (in /home/topcue/b/a.out)
+==52451==    by 0x10E770: main (in /home/topcue/b/a.out)
+==52451==
+==52451== LEAK SUMMARY:
+==52451==    definitely lost: 64 bytes in 3 blocks
+==52451==    indirectly lost: 12 bytes in 1 blocks
+==52451==      possibly lost: 0 bytes in 0 blocks
+==52451==    still reachable: 0 bytes in 0 blocks
+==52451==         suppressed: 0 bytes in 0 blocks
+==52451==
+==52451== For counts of detected and suppressed errors, rerun with: -v
+==52451== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
